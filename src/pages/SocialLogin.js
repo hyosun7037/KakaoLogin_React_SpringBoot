@@ -28,12 +28,9 @@ function SocialLogin() {
                 // console.log(test);
                 return jwtToken.text();
               })
-              .then(function (jwtTokenResult) {
-                console.log(jwtTokenResult);
-                localStorage.setItem(
-                  "Authentication",
-                  "Bearer " + jwtTokenResult
-                ); // 이렇게 하면 웹 브라우저에 저장
+              .then(function (jwtToken) {
+                console.log(jwtToken);
+                localStorage.setItem("Authentication", "Bearer " + jwtToken); // 이렇게 하면 웹 브라우저에 저장
                 // localStorage.setItem("jwtToken", jwtToken);
               });
             // console.log(jwtToken);

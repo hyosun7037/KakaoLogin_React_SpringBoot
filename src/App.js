@@ -21,6 +21,7 @@
 //     <div>
 //       <GoogleLoginTest />
 //       <h1>/user : {user}</h1>
+
 //       <button onClick={getUser}>유저정보 가져오기</button>
 //     </div>
 //   );
@@ -28,9 +29,8 @@
 
 // export default App;
 
-
-import React from 'react';
-import SocialLogin from './pages/SocialLogin';
+import React from "react";
+import SocialLogin from "./pages/SocialLogin";
 // import CounterContainer from './containers/CounterContainer';
 
 const App = () => {
